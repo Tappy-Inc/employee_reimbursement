@@ -1,7 +1,7 @@
 import { Pool, neonConfig } from "@neondatabase/serverless";
 import { Kysely, PostgresDialect } from "kysely";
-import type { DB } from "../../../kysely-types";
 import { env } from "@/lib/env.mjs";
+import { DB } from "@/kysely-types";
 
 neonConfig.fetchConnectionCache = true;
 
